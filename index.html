@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="C:\Users\adamn\Desktop\RPS-Multiplayer\assets\style.css">
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>RPS!!!</title>
+    </head>
+    <body>
+
+    
+    <header>
+         <div class = "container">
+            <h1 style = "text-align: center">Rock-Paper-Scissors</h1>
+         </div>
+    
+    <br>
+    <br>
+
+   
+    <div class = "container">
+        
+        <form>
+                <div class="form-group">
+                    <label for="user-name">Who Are You?</label>
+                    <input class="form-control" id="user-name" type="text">
+                </div>
+                <button class ="btn btn-primary" id="join-game">Jump In!</button>
+        </form>
+    </header>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <h3 id="player1name">No Player</h3>
+                <p id = "player1wins"></p>
+                <p id = "player1losses"></p>
+                <p id = "player1status"></p>
+                <div id = "player1choices">
+                    <p id="player1rock" value="rock" class="selector" side="player1" style = "text-align: center"><img src="assets/images\TheRock.jpg" id="selectionPic"></p>
+                    <p id="player1scissor" value="scissor" class="selector" side="player1" style = "text-align: center"><img src="assets/images\scissors.jpg" id="selectionPic"></p>
+                    <p id="player1paper" value="paper" class="selector" side="player1" style = "text-align: center"><img src="assets/images\paper.jpg" id="selectionPic"></p>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                 <p id = "results"></p>
+            </div>
+
+            <div class="col-sm-4">
+                <h3 id="player2name">No Player</h3>
+                <p id = "player2wins"></p>
+                <p id = "player2losses"></p>
+                <p id = "player2status"></p>
+                <div id = "player2choices">
+                    <p id="player2rock" value="rock" class="selector" style = "text-align: center"><img src="assets/images\TheRock.jpg" id="selectionPic"></p>
+                    <p id="player2scissor" value="scissor" class="selector" style = "text-align: center"><img src="assets/images\scissors.jpg" id="selectionPic"></p>
+                    <p id="player2paper" value="paper" class="selector" style = "text-align: center"><img src="assets/images\paper.jpg" id="selectionPic"></p>
+                </div>
+            </div>
+        </div>
+<br>
+<br>
+<br>
+        <div class="form-group" style="text-align: center">
+        <label for="chat-msg" style="font-size: 20px">Talk Some Smack!</label>
+                    <input class="form-control" id="chat-msg" type="text">
+        </div>
+        <button class="btn btn-primary" id="submit-message" type="submit">Submit</button>
+            <br>
+            <br>
+    <div class="panel panel-primary">
+        <div class="panel-heading">Messages</div>
+            <div class="panel-body">
+                <table class="table table-hover" id= "chat">
+                    <tr>
+                        <th>User Name</th>
+                        <th>Messages</th>
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+        
+
+
+   
+
+        <script src="C:\Users\adamn\Desktop\RPS-Multiplayer\assets\RPS.js"></script> 
+        
+    </body>
+</html>
