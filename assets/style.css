@@ -2,16 +2,18 @@
     height: 150px;
     width: 200px;
 }
-header {
-    
-    margin-bottom: 50px;
-    height: 200px;
+
+.HeaderPic {
     width: 900px;
+    height: 230px;
+    border: 10px solid;
+    padding: 10px;
+    border-color: black;
 }
 
 h1 {
-    background-image: url("C:\Users\adamn\Desktop\RPS-Multiplayer\assets\images\HeaderPic.png");
-    font-size: 100px;
+    text-align: center;
+    font-size: 145px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
@@ -26,9 +28,12 @@ p {
 
 form {
     text-align: center;
+    font-size: 35px;
 }
 
-.row {
-    background-color: black;
+
+.Battlefield {
+    background-repeat: no-repeat;
     
 }
+
