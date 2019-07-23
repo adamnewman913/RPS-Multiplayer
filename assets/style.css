@@ -29,11 +29,16 @@ p {
 form {
     text-align: center;
     font-size: 35px;
+    color:white;
 }
 
 
 .Battlefield {
     background-repeat: no-repeat;
     
+}
+
+body {
+    background-image: url("assets/images/background");
 }
 
